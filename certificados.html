@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/certificados.css">
+    <title>certificados</title>
+</head>
+
+<body>
+    <main>
+
+        <section>
+            <div class="name">
+                <div class="logo-container">
+                    <img class="logo" src="img/Frame.svg" alt="">
+                </div>
+                <div class="cargo">
+                    <h3>Front End Developer</h3>
+                </div>
+                <nav class="btn-nav">
+                    <a href="index.html">Inicio</a>
+                    <a href="proyectos.html">Proyectos</a>
+                </nav>
+            </div>
+
+            <div class="habilidades">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git-Hub</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="projects">
+            <h2>Certificados</h2>
+
+            <div class="projects-container">
+                <div class="card">
+                    <img src="img/ilustrator.png" alt="Ilustrator" class="miniatura" onclick="abrirImagen(this.src)">
+                    <h3>Ilustraitor</h3>
+                </div>
+
+                <div class="card">
+                    <img src="img/photoshop.png" alt="PhotoShop" class="miniatura" onclick="abrirImagen(this.src)">
+                    <h3>PhotoShop</h3>
+                </div>
+
+                <div class="card">
+                    <img src="img/17.png" alt="HTML y CSS" class="miniatura" onclick="abrirImagen(this.src)">
+                    <h3>HTML y CSS</h3>
+                </div>
+
+                <div class="card">
+                    <img src="img/18.png" alt="JavaScript" class="miniatura" onclick="abrirImagen(this.src)">
+                    <h3>JavaScript</h3>
+                </div>
+
+                <div class="card">
+                    <img src="img/frontend.png" alt="Front End" class="miniatura" onclick="abrirImagen(this.src)">
+                    <h3>Front End</h3>
+                </div>
+
+                <div class="card">
+                    <img src="img/25.png" alt="Front End" class="miniatura" onclick="abrirImagen(this.src)">
+                    <h3>Front End</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal Lightbox -->
+        <div id="modalImagen" class="modal">
+            <span class="cerrar" onclick="cerrarImagen()">&times;</span>
+            <img class="modal-contenido" id="imgModal">
+        </div>
+
+
+
+        <footer>
+            <div class="social">
+                <a href="#"><img src="img/Vectorgit.svg" alt=""></a>
+                <a href="#"><img src="img/Vectorlink.svg" alt=""></a>
+                <a href="#"><img src="img/Vectorwhat.svg" alt=""></a>
+                <a href="#"><img src="img/Vectorimei.svg" alt=""></a>
+            </div>
+        </footer>
+
+
+
+        <script src="javascript/certificados.js"></script>
+
+    </main>
+</body>
+
+</html>
