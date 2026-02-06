@@ -16,6 +16,7 @@ section {
 .name {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .name .logo {
@@ -95,7 +96,7 @@ li {
     /* subir / bajar */
     padding: 10px;
 
-    overflow: scroll;
+
     scrollbar-width: none;
 }
 
@@ -133,4 +134,100 @@ footer {
 .social a img:hover {
     transition: transform 0.3s ease;
     transform: translateY(-6px) scale(1.2);
+}
+
+
+
+
+
+
+
+/* ============================
+   RESPONSIVE
+============================ */
+
+/* Tablets */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .name {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h3 {
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .btn-nav {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .habilidades {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin: 5px 15px;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 15px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .social a img {
+        margin: 0px 20px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+    h3 {
+        font-size: 16px;
+    }
+
+    li {
+        margin: 5px 10px;
+        font-size: 14px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        /* Una tarjeta por fila */
+        gap: 10px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .btn-nav a {
+        width: 90px;
+        font-size: 10px;
+        padding: 5px 10px;
+        margin: 5px;
+    }
+
+    .social a img {
+        margin: 0px 15px;
+        width: 30px;
+        height: 30px;
+    }
 }

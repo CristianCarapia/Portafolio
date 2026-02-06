@@ -179,3 +179,95 @@ footer {
     transition: transform 0.3s ease;
     transform: translateY(-6px) scale(1.2);
 }
+
+
+
+
+
+/* ------------------ Responsivo ------------------ */
+
+/* Para pantallas pequeñas (móviles) */
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    section {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .name {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .name .logo {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        margin-left: 0;
+        width: auto;
+    }
+
+    .btn-nav {
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .btn-nav a {
+        width: 150px;
+        margin: 5px 0;
+    }
+
+    .habilidades ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        /* Una columna en móviles */
+        gap: 15px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .contacto {
+        align-items: center;
+        text-align: center;
+    }
+
+    .contacto a {
+        justify-content: center;
+    }
+}
+
+/* Para tabletas medianas */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    section {
+        width: 85%;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columnas en tabletas */
+    }
+
+    .btn-nav {
+        justify-content: center;
+    }
+}
+
+/* Ajuste para imágenes en modal */
+.modal-contenido {
+    max-width: 95%;
+    max-height: 75%;
+}
