@@ -116,6 +116,10 @@ aside {
     width: 708px;
 }
 
+.color-letras {
+    color: #02fbdb;
+}
+
 .descripcion {
     display: flex;
 }
